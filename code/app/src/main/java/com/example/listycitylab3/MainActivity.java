@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements AddCityFragment.A
         cityAdapter = new CityArrayAdapter(this, dataList);
         cityList.setAdapter(cityAdapter);
 
-        // Open edit dialog on city click
+
         cityList.setOnItemClickListener((parent, view, position, id) -> {
             City selectedCity = dataList.get(position);
             EditCityFragment editFragment = EditCityFragment.newInstance(selectedCity);

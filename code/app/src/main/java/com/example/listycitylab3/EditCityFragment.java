@@ -13,8 +13,6 @@ import androidx.fragment.app.DialogFragment;
 
 public class EditCityFragment extends DialogFragment {
     private City city;
-
-    // EXACT pattern from your screenshot
     public static EditCityFragment newInstance(City city) {
         Bundle args = new Bundle();
         args.putSerializable("city", city);
